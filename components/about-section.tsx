@@ -25,13 +25,13 @@ const features = [
 
 export function AboutSection() {
   return (
-    <section id="tentang" className="py-16 md:py-24 bg-secondary/30">
+    <section id="tentang" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <p className="text-primary font-medium mb-2 tracking-wide uppercase text-sm">
+        <div className="mb-12 text-center">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-primary">
             Tentang Kami
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-foreground md:text-4xl mb-4">
             Kenapa Memilih Kami?
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -44,12 +44,12 @@ export function AboutSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="bg-card rounded-xl p-6 text-center border border-border hover:shadow-lg transition-shadow"
+              className="rounded-[24px] border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
             >
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
                 <feature.icon className="h-7 w-7 text-primary" />
               </div>
-              <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-lg font-semibold text-foreground mb-2">
                 {feature.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

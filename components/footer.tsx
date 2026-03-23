@@ -2,13 +2,13 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer id="kontak" className="bg-foreground text-background">
+    <footer id="kontak" className="bg-[#123524] text-background">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center">
                 <span className="text-primary-foreground font-serif text-lg font-bold">G</span>
               </div>
               <span className="font-serif text-2xl font-semibold">Gura</span>
