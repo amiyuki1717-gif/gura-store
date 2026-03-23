@@ -10,6 +10,15 @@ export interface Product {
 
 export const products: Product[] = [
   {
+    id: "9",
+    name: "KUE SEPEDA",
+    description: "Kreasi spesial bergaya sepeda merah yang unik, lembut di setiap lapisan, dan siap jadi pusat perhatian di momen kejutan paling berkesan.",
+    price: 315000,
+    image: "/images/kue-sepeda.svg",
+    category: "Modern",
+    badge: "Limited"
+  },
+  {
     id: "1",
     name: "Kue Lapis Legit Premium",
     description: "Kue lapis tradisional dengan lapisan yang sempurna, dibuat dengan mentega Wijsman asli",
