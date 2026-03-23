@@ -14,7 +14,7 @@ export function Header() {
     { href: "#produk", label: "Produk" },
     { href: "#kategori", label: "Kategori" },
     { href: "#tentang", label: "Tentang Kami" },
-    { href: "#kontak", label: "Kontak" },
+    { href: "https://t.me/mantelkagura", label: "Kontak", external: true },
   ]
 
   return (
@@ -37,6 +37,8 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
               >
                 {link.label}
@@ -81,6 +83,8 @@ export function Header() {
                 <a
                   key={link.href}
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className="px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-secondary rounded-lg transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
